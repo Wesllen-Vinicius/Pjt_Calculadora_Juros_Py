@@ -49,7 +49,8 @@ class CalculadoraJurosView:
         resultado_frame = ttk.Frame(self.root, padding="20")
         resultado_frame.grid(row=1, column=0, sticky="nsew")
 
-        ttk.Label(resultado_frame, text="Resultados:", font=("Arial", 14, "bold")).grid(row=0, column=0, pady=10, sticky="w")
+        ttk.Label(resultado_frame, text="Resultados:", 
+                  font=("Arial", 14, "bold")).grid(row=0, column=0, pady=10, sticky="w")
 
         ttk.Label(resultado_frame, text="Valor Total Final:").grid(row=1, column=0, sticky="w")
         self.valor_final_label = ttk.Label(resultado_frame, text="")
@@ -82,7 +83,8 @@ class CalculadoraJurosView:
         periodo = float(self.periodo_entry.get())
         tipo_periodo = self.tipo_periodo_combobox.get()
 
-        resultado = self.calcular_callback(valor_inicial, taxa_juros, tipo_juros, valor_mensal, periodo, tipo_periodo)
+        resultado = self.calcular_callback(valor_inicial, 
+                                           taxa_juros, tipo_juros, valor_mensal, periodo, tipo_periodo)
 
         if resultado is not None:
             valor_total_final = resultado
