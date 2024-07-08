@@ -1,5 +1,4 @@
 import tkinter as tk
-from tkinter import ttk
 from model.modelo import CalculadoraJuros
 from view.view import CalculadoraJurosView
 

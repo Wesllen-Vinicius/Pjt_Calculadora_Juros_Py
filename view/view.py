@@ -1,7 +1,8 @@
-import tkinter as tk
+import tkinter
 from tkinter import ttk
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+
 
 class CalculadoraJurosView:
     def __init__(self, root, calcular_callback):
